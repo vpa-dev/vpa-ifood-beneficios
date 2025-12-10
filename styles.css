@@ -1,0 +1,144 @@
+:root {
+  --bordo: #4b002b;
+  --bordo-light: #6c1840;
+  --cinza-texto: #555;
+  --branco: #fff;
+  --max-width: 1280px;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 0 24px;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  background: var(--bordo);
+  padding: 16px 0;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-flex img {
+  height: 48px;
+}
+
+/* BANNER */
+.banner {
+  background: var(--bordo);
+  color: var(--branco);
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.banner h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.banner p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* BENEFÍCIOS */
+.benefits-section {
+  padding: 80px 0;
+}
+
+.benefits-section h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.benefits-section p.subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: var(--cinza-texto);
+  max-width: 650px;
+  margin: 0 auto 50px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.benefit-card {
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 26px;
+  background: #fff;
+  text-align: left;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 14px;
+}
+
+.benefit-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.benefit-card p {
+  font-size: 15px;
+  color: var(--cinza-texto);
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  header img {
+    height: 38px;
+  }
+
+  .banner {
+    padding: 80px 20px;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-section h2 {
+    font-size: 26px;
+  }
+}
