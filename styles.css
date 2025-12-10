@@ -3,6 +3,7 @@
   --bordo-light: #6c1840;
   --cinza-texto: #555;
   --branco: #fff;
+  --verde: #8CDFBD;
   --max-width: 1280px;
 }
 
@@ -23,7 +24,10 @@ body {
 /* HEADER */
 header {
   background: var(--bordo);
-  padding: 16px 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .header-flex {
@@ -33,7 +37,15 @@ header {
 }
 
 .header-flex img {
-  height: 48px;
+  width: 250px;
+}
+
+.logo-ifood{
+  filter: brightness(0) invert(1);
+}
+
+.title-green{
+  color: var(--verde);
 }
 
 /* BANNER */
@@ -60,6 +72,7 @@ header {
 /* BENEFÍCIOS */
 .benefits-section {
   padding: 80px 0;
+  text-align: center;
 }
 
 .benefits-section h2 {
