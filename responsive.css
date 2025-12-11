@@ -6,7 +6,7 @@
   }
 
   .info{
-    gap: 70px;
+    gap: 50px;
   }
 }
 
@@ -35,7 +35,7 @@
 
   .info{
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
   }
 
   .card-info{
@@ -43,6 +43,6 @@
   }
 
   .card-info h3{
-    font-size: 35px;
+    font-size: 25px;
   }
 }
