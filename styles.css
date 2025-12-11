@@ -1,15 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
+  --degrade: linear-gradient(to top, #42000d, #141414);
   --bordo: #4b002b;
   --bordo-light: #6c1840;
   --cinza-texto: #555;
   --branco: #fff;
-  --verde: #8CDFBD;
+  --verde: #3ce29d;
   --max-width: 1280px;
 }
 
 body {
-  margin: 0;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #111;
   background: #fff;
 }
@@ -17,13 +23,23 @@ body {
 .container {
   width: 100%;
   max-width: var(--max-width);
-  padding: 0 24px;
   margin: auto;
+  padding: 20px;
+}
+
+.names-sections{
+  color: #da0565;
+  font-weight: 500;
+  border: 1px solid #da0565;
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 5px 10px;
+  width: fit-content;
 }
 
 /* HEADER */
 header {
-  background: var(--bordo);
+  background: #141414;
   width: 100%;
   height: 80px;
   display: flex;
@@ -40,24 +56,29 @@ header {
   width: 250px;
 }
 
-.logo-ifood{
+.logo-ifood {
   filter: brightness(0) invert(1);
 }
-
-.title-green{
-  color: var(--verde);
-}
+/* FIM HEADER */
 
 /* BANNER */
 .banner {
-  background: var(--bordo);
+  background: var(--degrade);
   color: var(--branco);
   text-align: center;
-  padding: 120px 20px;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.app-tela {
+  margin-top: 50px;
+  width: 300px;
+  margin-bottom: -4px;
 }
 
 .banner h1 {
-  font-size: 42px;
+  font-size: 45px;
   font-weight: 800;
   margin-bottom: 16px;
 }
@@ -69,17 +90,22 @@ header {
   opacity: 0.9;
 }
 
+.title-green {
+  color: var(--verde);
+}
+/* FIM BANNER */
+
 /* BENEFÍCIOS */
 .benefits-section {
-  padding: 80px 0;
+  padding: 50px 20px;
   text-align: center;
 }
 
 .benefits-section h2 {
   text-align: center;
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 800;
-  margin-bottom: 10px;
+  margin: 10px 0px;
 }
 
 .benefits-section p.subtitle {
@@ -91,9 +117,15 @@ header {
 }
 
 .benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 24px;
+}
+
+/* AQUI ESTAVA O PROBLEMA */
+.benefits-grid .benefit-card {
+  flex: 0 1 calc(25% - 24px);
+  max-width: calc(25% - 24px);
 }
 
 .benefit-card {
@@ -125,33 +157,4 @@ header {
 .benefit-card p {
   font-size: 15px;
   color: var(--cinza-texto);
-}
-
-/* RESPONSIVO */
-@media (max-width: 1024px) {
-  .benefits-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  header img {
-    height: 38px;
-  }
-
-  .banner {
-    padding: 80px 20px;
-  }
-
-  .banner h1 {
-    font-size: 30px;
-  }
-
-  .benefits-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .benefits-section h2 {
-    font-size: 26px;
-  }
 }
