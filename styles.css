@@ -95,6 +95,29 @@ header {
 }
 /* FIM BANNER */
 
+/* INFORMAÇÕES */
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 65px 20px;
+  gap: 150px;
+}
+
+.card-info{
+  text-align: center;
+}
+
+.card-info h3{
+  font-size: 35px;
+  color: var(--bordo-light);
+}
+
+.card-info p{
+  opacity: 0.7;
+}
+/* FIM INFORMAÇÕES */
+
 /* BENEFÍCIOS */
 .benefits-section {
   padding: 50px 20px;

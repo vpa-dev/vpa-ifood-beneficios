@@ -1,3 +1,15 @@
+/* TABLET — 2 por linha */
+@media (max-width: 999px) {
+  .benefits-grid .benefit-card {
+    flex: 0 1 calc(50% - 24px);
+    max-width: calc(50% - 24px);
+  }
+
+  .info{
+    gap: 70px;
+  }
+}
+
 @media screen and (max-width: 769px) {
   .header-flex img {
     width: 180px;
@@ -15,20 +27,22 @@
     width: 250px;
     margin-bottom: -5px;
   }
-}
 
-/* TABLET — 2 por linha */
-@media (max-width: 992px) {
-  .benefits-grid .benefit-card {
-    flex: 0 1 calc(50% - 24px);
-    max-width: calc(50% - 24px);
-  }
-}
-
-/* MOBILE — 1 por linha */
-@media (max-width: 576px) {
   .benefits-grid .benefit-card {
     flex: 0 1 100%;
     max-width: 100%;
+  }
+
+  .info{
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .card-info{
+    text-align: center;
+  }
+
+  .card-info h3{
+    font-size: 35px;
   }
 }
