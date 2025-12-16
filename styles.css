@@ -53,13 +53,22 @@ header {
   height: 70px;
 }
 
+.logos-empresa{
+  display: flex;
+  align-items: center;
+}
+
 .logos-empresa img {
   width: 150px;
 }
 
+.logos-empresa .vpa-logo{
+  padding-right: 7px;
+}
+
 .logos-empresa .gr-inovacao{
   border-left: 1px solid #fff;
-  padding-left: 8px;
+  padding-left: 7px;
 }
 
 .logo-ifood {
@@ -198,3 +207,152 @@ header {
   font-size: 15px;
   color: var(--cinza-texto);
 }
+/* FIM BENEFÍCIOS */
+
+/* CLUBE IFOOD */
+.clube-ifood{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FDF8F1;
+  padding: 50px 20px;
+}
+
+.clube-ifood h2{
+  margin-top: 10px;  
+  font-size: 35px;
+  color: #65082D;
+}
+
+.cards-clube{
+  display: flex;
+  margin-top: 10px;
+}
+
+.cards-clube img{
+  width: 210px;
+  margin: 20px 30px;
+  border-radius: 20px!important;
+}
+/* FIM CLUBE IFOOD */
+
+/* PARCEIROS */
+.ofertas-parceiros{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0px;
+}
+
+.ofertas-parceiros h3{
+  font-size: 35px;
+  color: #65082D;
+  margin-bottom: 5px;
+}
+
+.section-cards-parceiros{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-parceiros{
+  width: 300px;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #e4e4e4;
+}
+
+.cards-parceiros img{
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.cards-parceiros p{
+  font-size: 15px;
+}
+
+.cards-parceiros small{
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.tag-logo{
+  margin-bottom: 20px;
+}
+
+.percent-discont{
+  font-weight: 600;
+  color: #db2833;
+}
+/* FIM PARCEIROS */
+
+/* SERVIÇOS */
+.servicos-time{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.servicos-time h3{
+  font-size: 35px;
+  color: #65082D;
+  margin-bottom: 5px;
+}
+
+.section-servicos-time{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-servicos{
+  width: 300px;
+  text-align: center;
+  background-color: #65082D;
+  color: #fff;
+  padding: 20px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #e4e4e4;
+}
+
+.cards-servicos img{
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.cards-servicos p{
+  font-size: 15px;
+}
+
+.cards-servicos small{
+  font-size: 13px;
+  font-weight: bold;
+}
+/* FIM SERVIÇOS */
