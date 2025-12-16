@@ -93,5 +93,12 @@
   .cards-servicos{
     width: 100%;
   }
+
+  /* Títulos na versão mobile */
+  .clube-ifood h2,
+  .ofertas-parceiros h3,
+  .servicos-time h3{
+    font-size: 30px;
+  }
 }
 
