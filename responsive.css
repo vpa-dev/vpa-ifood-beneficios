@@ -100,5 +100,14 @@
   .servicos-time h3{
     font-size: 30px;
   }
+
+  .section-desbloquear ul{
+    margin-left: 20px;
+  }
+
+  .section-debloquear h2{
+    font-size: 27px;
+    text-align: center;
+  }
 }
 

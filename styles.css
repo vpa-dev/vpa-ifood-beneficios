@@ -366,7 +366,7 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 50px 20px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -381,5 +381,47 @@ header {
   height: 45px;
   object-fit: contain;
 }
-
 /* FIM BAIXAR APP */
+
+/* DESBLOQUEAR */
+.section-debloquear{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px;
+}
+
+.section-debloquear h2{
+  font-size: 30px;
+  color: #65082D;
+}
+
+.section-debloquear ul{
+  margin-left: 20px;
+  list-style-type: decimal;
+  margin-top: 30px;
+}
+
+.section-debloquear li{
+  margin-bottom: 8px;
+}
+
+.section-debloquear p{
+  margin-top: 15px;
+}
+
+.section-debloquear h3{
+  background-color: #3ce29d;
+  color: #141414;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+.section-debloquear ul li::marker {
+  color: #65082D;
+  font-weight: bold;
+}
+/* FIM DESBLOQUEAR */
