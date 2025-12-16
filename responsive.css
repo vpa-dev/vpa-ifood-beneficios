@@ -8,6 +8,20 @@
   .info {
     gap: 50px;
   }
+
+  .cards-clube{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section-cards-parceiros{
+    flex-wrap: wrap;
+  }
+
+  .section-servicos-time{
+    flex-wrap: wrap;
+  }
+  
 }
 
 @media screen and (max-width: 769px) {
@@ -66,4 +80,18 @@
   .card-info h3 {
     font-size: 25px;
   }
+
+  .cards-clube img{
+    width: 180px;
+    margin: 20px 0px;
+  }
+
+  .cards-parceiros{
+    width: 100%;
+  }
+
+  .cards-servicos{
+    width: 100%;
+  }
 }
+

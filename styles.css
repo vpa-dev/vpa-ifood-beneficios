@@ -171,7 +171,6 @@ header {
   gap: 24px;
 }
 
-/* AQUI ESTAVA O PROBLEMA */
 .benefits-grid .benefit-card {
   flex: 0 1 calc(25% - 24px);
   max-width: calc(25% - 24px);
@@ -217,6 +216,7 @@ header {
   flex-direction: column;
   background-color: #FDF8F1;
   padding: 50px 20px;
+  text-align: center;
 }
 
 .clube-ifood h2{
@@ -254,9 +254,11 @@ header {
 
 .section-cards-parceiros{
   margin-top: 20px;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .cards-parceiros{
@@ -319,6 +321,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .cards-servicos{
