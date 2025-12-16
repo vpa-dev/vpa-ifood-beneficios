@@ -359,3 +359,27 @@ header {
   font-weight: bold;
 }
 /* FIM SERVIÇOS */
+
+/* BAIXAR APP */
+.footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.download-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.download-container img{
+  margin-top: 10px;
+  width: 220px;
+  height: 45px;
+  object-fit: contain;
+}
+
+/* FIM BAIXAR APP */
